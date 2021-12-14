@@ -1,0 +1,356 @@
+				__Introdução ao HTML__
+
+ *HTML1:Cirado em 1991 por Tim Berners-Lee.
+ *HTML2: 1995.
+ *HTML3 e 4: 1997.
+ *HTML5: 2014.
+
+
+
+				__Entendedo o HTML__
+
+   Abrindo a tag         Fechando a tag
+ |______________       _______________
+ |                |         |
+ |                |         |
+<h1 class="titulo">Título</h1
+  _  ______________ ______ _
+  |       |          |     |
+  |       |          |     |
+  |       |          |     |
+  |        ^         ^     |
+  |    Atributo    Conteúdo|
+  __________________________
+       Elemento: é a base
+
+
+
+        Estrutura básica
+<!DOCTYPE html> ( o que está escrevendo)
+<html>
+ <head>
+  <meta>o que o navegado/provedor necessita? (char set)
+  <title></title> tir=tulo
+ </head>
+<body> conteúdo da página
+</body>
+</html>
+
+
+<sectin> ( Representa uma lista de artigos)
+<header> (cabeçalo da página)
+<footer> ( rodapé)
+<article>( artigo relevante ex de um blog)
+<aside> (relaciodado ao conteúdo principal da página: como uma biografio do autor, links relacionados, normalmente representado por uma barra lateral(/)
+<h1>-<h6> a importancia de um titulo de uma página
+
+				__Para conteúdos maiores__
+
+É utilizado o <p>conteúdo maiore como um artigo.</p>
+pode adicionar imagens links e outros conteúdos nele.
+**********
+
+elemento <a>Link</a>
+<a hrf="linkedin.com/in/vilaboin">LinkedIn</a>
+<a href="mailto:estela.almeida.oliveira@hotmail.com">E-mail</a>
+
+<a target="-blank"Link</a>   (abir em uma nova aba)
+
+				__Imagem__
+
+<img src="img/avatar.jpg>
+<img alt="Foto Estela">
+ pra redimencionar  img -->  <img width="600px" height="200px"src="codigo.jpg" alt="Editor de códgos">
+
+				__Listas__
+Representados por números letras ou algarismo romano.
+<ul> oredem dos itens não são importantes
+Item 1
+Item 2
+
+<ol> a ordem dos intens são importantes
+1. Item 1
+2. Item 3
+obs.: Representados por números letras ou algarismo romano.
+
+<li> é um item desta lista
+
+________________
+Curso de css3
+________________
+ Cria em 1996 (linguagem de style)
+
+              Seletores
+                 |
+a, p,h1,h3 {
+	color:[]blue;
+	font-size:14px;
+	}
+	|______________|
+	        |
+	    Declaraçôes
+
+
+    ID x Classe
+<hesder id="header" class="header"></header>
+<header class="header"></header>
+
+__________________________________________________
+		
+	class em HTML  utiliza-se "class" já em CSS usa-se o (.)
+.header {
+	padding: 10px;
+	}
+
+	#header {
+	padding: 15px;
+	}
+
+
+_________________________________________
+
+Adicionando o arquivo CSS no HTML
+dentro de head inclua  linha :
+ <link rel="stylesheet" href="style.css">
+
+para incluir id aos elementos
+
+
+________________________________
+Conceito Básico
+    		box model
+
+      |-----------------------------------------|
+      |	  margin                                | ----> Espaçamentos entre os elementos.
+      |	 ______________________________________ |
+      |	|   border                            | | ----> circundam o padding e o content  CONSEGUE ALTERAR A APARENCIA COMO LARGURA E COR.
+      |	|  -------------------------------    |	|                      
+      |	| |	padding                  |    | |
+      |	| |	 _____________________   |    | | ---->  Espaçamento entre a bosrda e o conteúdo.   
+      |	| |	|    content          |  |    | |
+      |	| |	|_____________________|  |    | | ---->  Espaçamento entre é o que o bloco representa como uma imagem ou um vídeo ou texto.
+      |	|  -------------------------------    |	|			      
+      |	|_____________________________________| |
+      |						|
+      |-----------------------------------------|	
+				|
+
+
+
+
+
+
+********
+Estizando elementos
+
+
+1° colocando valores inferiores e superiores
+.post{    eixo y  eixo x(esquerdo direito
+padding: 10px      5px
+
+2° um favor para cada lado
+
+.post{ topo,direita, inferior e para a esquerda
+padding: 15px 10px 5px 0;
+}
+
+3° 
+.post{
+padding-top: 15px;
+padding-right:10px;
+padding-boottom:5px;
+padding-left:0;
+}
+
+
+background
+
+
+.post {
+
+ background-color: []green
+
+ background-image: url("bg.pg");
+ 
+  background-positin:top;
+
+
+
+para mudar a cor
+
+	.post{
+
+background-color:green;
+
+background-color: #008800;
+
+background: #008000;
+
+                            propriedade Border
+largura:pixels,centímetros, milímetros..
+cor: blue,#000ff...
+estilo: sólida, pontilhada,tracejada...
+
+.post {
+	border: 3px solid []blue;
+	border-top:2px dotted []green;
+	border-right: 4px dashed []pink
+}
+como separar a estilização de cada lado de uma borda
+
+.post{
+	border-top: 2px dotted []green;
+	border-right: 4px dashed []pink;
+	border-bottom: 1px solid[]purple;
+	border-left: 4px dotted []cyan;
+}
+
+
+pode usar propriedade especifica da border
+.post { 
+	border: 3px solid []#5050
+
+}
+
+.post{
+ 
+	border-width:3px;
+	border-color:[]#505050;
+	border-style: solid;
+}
+
+.post {
+
+}
+
+juntado os lados
+border-top-width: 3px;
+border-top-color: []blue;
+border-top-style: solid;
+ 
+
+Border-radius
+
+borde-radius:10px;
+borde-radius:50%;
+borde-radius:10% 20%;
+borde-radius:10% 20% 15% 22%;
+
+*****estilizando texto**
+
+
+font-family
+
+#title{
+	font-family:verdana;
+}
+
+.post_tile {
+	font-familily: VERDANA.ARIAL;		
+}
+
+
+		FOT-SIZE  (TAMANHO DO TEXTO)
+
+#title{
+	font-size:px;
+
+}
+	.post_title {
+	font-size: 18px;
+}
+
+
+		font-style (muda  a forma ex: italic)
+
+        #title{
+	font-style: normal;
+}
+
+	.subtitule {
+		font-style:italic;
+}
+
+
+		#title{
+
+		font-weight: normal;
+}
+	.subtitle {
+		font-weight: bold;
+}
+
+
+
+			text-transform(alterna o texto entre maiusculo e minusculo
+
+	#TITLE {
+		text-transform: uppercase;
+}
+
+		.subtitle{
+		  text-transform: lowercase;
+}
+	  .post_title{
+		text-transform: uppercase capitalize;
+}
+
+
+
+	***text-decoration*****
+
+
+#title {
+	text-decoration:underline
+}
+	.suptitle{
+	  texte-decoratin:overline
+}
+	.post_title {
+	  text-decoration: line-throgh;
+
+}
+
+    -----------------------------------------
+		Estilizando listas
+---------------------------------------------
+	list-style-type
+
+ul {
+liste-style-type: square;
+}
+
+
+ol {
+liste-style-type: upper-roman;
+}
+
+
+ul {
+liste-style-type: "\F44D";
+}
+
+                                --list-style-image (como marcador)-----
+
+
+	ul {
+	liste-style-type: image:("rocket.png");
+}
+
+
+
+			Dimensão e alinehamento
+                 ------------------------------------
+Width
+height   -->  é usado para ajusta a largura e a altuta
+
+max-width
+max-height  --> largura  e altura maximado do elemento
+
+margin  ---> serve para linha elemwntos automaticamente
+
+text align --> alinhar texto
+
+
+
+
