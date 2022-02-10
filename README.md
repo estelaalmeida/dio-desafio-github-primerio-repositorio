@@ -14,4 +14,4 @@ Repositório  criado para  o Desafio  de  projeto.
 1°- git status pasta nova;
 2°- git add . ou git add -A depois volta ao passo 1° para verificar o status;
 3°- git commit -m "titulo do que foi feito";
-4°- git push origin principal ---> senha;
+4°- git push origin main  ---> Senha
